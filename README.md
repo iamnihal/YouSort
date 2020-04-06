@@ -6,14 +6,5 @@
 
   <h4 align="center">Sort trending youtube videos based on rating (like/dislike).</h4>
 
-# Intro
+# Introduction:-
 YouSort is a small python utility that sort trending youtube videos based on their rating. Here rating indicates ratio of like to dislike.
-
-#### How to run?
-- ./wallpaper.sh [url]
-
-#### Example:-
-- ./wallpaper.sh https://wallpaperplay.com/board/4k-minimalist-wallpapers
-
-##### Here's the blog post about this script:-
-https://sites.google.com/view/iamnihal/automate-the-shit
