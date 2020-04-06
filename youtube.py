@@ -69,10 +69,10 @@ def infoExtract(URL):
             csv_out.writerows(z)
         return
     else:
-        nextPage = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,                                                            snippet&chart=mostPopular&regionCode={}&maxResults=50&pageToken={}&key=[API-KEY]".format(conn,pagetoken)
+        nextPage = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,snippet&chart=mostPopular&regionCode={}&maxResults=50&pageToken={}&key=[API-KEY]".format(conn,pagetoken)
         infoExtract(nextPage)
 
 conn = myfunction()
-initURL = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,                                                            snippet&chart=mostPopular&regionCode={}&maxResults=50&key=[API-KEY]".format(conn)
+initURL = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,snippet&chart=mostPopular&regionCode={}&maxResults=50&key=[API-KEY]".format(conn)
 
 infoExtract(initURL)
