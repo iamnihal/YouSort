@@ -8,6 +8,7 @@ video = []
 title = []
 like = []
 dislike = []
+API_KEY = input("Enter your youtube API_KEY:- ")
 
 def myfunction():
     COUNTRY = input("Enter your ISO alpha-2 country code (If don't know, type Enter):- ")
@@ -69,10 +70,10 @@ def infoExtract(URL):
             csv_out.writerows(z)
         return
     else:
-        nextPage = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,snippet&chart=mostPopular&regionCode={}&maxResults=50&pageToken={}&key=[API-KEY]".format(conn,pagetoken)
+        nextPage = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,snippet&chart=mostPopular&regionCode={}&maxResults=50&pageToken={}&key={}".format(conn,pagetoken,API_KEY)
         infoExtract(nextPage)
 
 conn = myfunction()
-initURL = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,snippet&chart=mostPopular&regionCode={}&maxResults=50&key=[API-KEY]".format(conn)
+initURL = "https://www.googleapis.com/youtube/v3/videos?part=id,statistics,snippet&chart=mostPopular&regionCode={}&maxResults=50&key={}".format(conn,API_KEY)
 
 infoExtract(initURL)
