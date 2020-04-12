@@ -11,7 +11,7 @@ dislike = []
 API_KEY = input("Enter your youtube API_KEY:- ")
 
 def myfunction():
-    COUNTRY = input("Enter your ISO alpha-2 country code (If don't know, type Enter):- ")
+    COUNTRY = input("Enter your ISO alpha-2 country code:- ")
     if (len(COUNTRY) != 2) or (not COUNTRY):
         print("You have entered invalid country code. Please enter correct code.")
         conn = myfunction()
