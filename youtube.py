@@ -14,8 +14,7 @@ def myfunction():
     COUNTRY = input("Enter your ISO alpha-2 country code:- ")
     if (len(COUNTRY) != 2) or (not COUNTRY):
         print("You have entered invalid country code. Please enter correct code.")
-        conn = myfunction()
-        return conn
+        myfunction()
     else:
         return COUNTRY
 
