@@ -19,5 +19,3 @@ You can get the API key by login with your Google ID in  https://console.cloud.g
 4. Enable the API.
 5. Create a credential.
 6. A screen will appear with the API key.
-
-Suggestions/Add-ons are welcome!!
